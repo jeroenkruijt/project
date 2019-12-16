@@ -25,6 +25,9 @@ down = 0;
 jump = 0;
 jump_held = 0;
 
+//boolean mirror check if able to open door restroom
+mirror = 0;
+
 //states 
 enum states {
 	IDLE,

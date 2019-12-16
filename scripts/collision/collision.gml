@@ -13,7 +13,7 @@ hsp -= hsp_decimal;
 vsp_decimal = vsp - (floor(abs(vsp)) * sign(vsp));
 vsp -= vsp_decimal;
 
-//horizental collision
+//horizental collision;
 var side;
 //determine which side to test
 if hsp > 0 side = bbox_right else side = bbox_left;
