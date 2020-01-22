@@ -14,8 +14,6 @@ jumps = jump_initial;
 // friction/drag
 drag = .12;
 
-//facing direction 
-facing = 1;
 
 //movement 
 left = 0;
@@ -25,8 +23,22 @@ down = 0;
 jump = 0;
 jump_held = 0;
 
+//restroom_01 start position
+room_start_pos_x = 1243;
+room_start_pos_y = 607;
+room_start_facing = -1;
+x = room_start_pos_x;
+y = room_start_pos_y;
+//facing direction 
+facing = room_start_facing;
+
+
 //boolean mirror check if able to open door restroom
 mirror = 0;
+
+radius = 16;
+active_textbox = noone;
+
 
 //states 
 enum states {
@@ -50,3 +62,8 @@ sprites_array[states.IDLE]		= s_player_idle;
 sprites_array[states.WALK]		= s_player_walking;
 sprites_array[states.JUMP]		= s_player_jump;
 sprites_array[states.JOY]		= s_player_joy
+
+//textbox vars
+portrait_index = 6;
+voice = text_sound;
+name = "player";
